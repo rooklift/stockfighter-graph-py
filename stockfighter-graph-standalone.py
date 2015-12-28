@@ -197,10 +197,7 @@ class Devices ():
 			
 			elif event.type == KEYUP:
 				k = event.key
-				try:
-					self.keysdown.remove(k)
-				except KeyError:
-					pass
+				self.keysdown.discard(k)
 
 
 class Data ():
