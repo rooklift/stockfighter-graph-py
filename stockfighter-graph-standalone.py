@@ -34,7 +34,7 @@ class Frame():															# Info about 1 quote
 			self.trade = None
 		
 		if bid is not None:
-			self.bid = Point(bid, 0, 127, 255)
+			self.bid = Point(bid, 0, 180, 255)
 		else:
 			self.bid = None
 		
