@@ -42,15 +42,6 @@ class Frame():															# Info about 1 quote
 			self.ask = Point(ask, 255, 0, 0)
 		else:
 			self.ask = None
-	
-	def __str__(self):
-		t = self.trade.y if self.trade else None
-		b = self.bid.y if self.bid else None
-		a = self.ask.y if self.ask else None
-		return "Frame({}, {}, {})".format(t, b, a)
-	
-	def __repr__(self):
-		return self.__str__()
 
 
 class Point():
